@@ -47,8 +47,8 @@ public class VerifyView extends AppLayout implements HasUrlParameter<String> {
     private final UserServices userService;
     private final EmailService emailService;
 
-    private final String EMAIL_USERNAME = "shanemarahay@gmail.com";
-    private final String EMAIL_PASSWORD = "azfi yhun igli arcc";
+    private final String EMAIL_USERNAME = "";
+    private final String EMAIL_PASSWORD = "";
 
     private String generatedOTP;
     private String userInputOTP = "";
