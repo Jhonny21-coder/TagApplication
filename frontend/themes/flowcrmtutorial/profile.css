@@ -1,0 +1,255 @@
+@import "own-profile.css";
+@import "edit-profile.css";
+
+.profile-fullname {
+   color: white;
+   font-size: 15px;
+   font-weight: bold;
+   position: relative;
+   right: 10px;
+   width: 234px;
+}
+
+.profile-bio-text {
+   position: relative;
+   top: -100px;
+}
+
+.profile-name {
+   position: relative;
+   top: -110px;
+}
+
+.profile-cover-photo-image {
+   height: 140px;
+   pointer-events: none;
+   object-fit: cover;
+}
+
+vaadin-avatar.profile-avatar {
+   position: relative;
+   top: -110px;
+}
+
+.profile-layout {
+   position: relative;
+   top: -20p;
+   background: var(--lumo-contrast-10pct);
+   /*background: linear-gradient(to bottom, var(--lumo-contrast-20pct) 50%,
+               var(--lumo-contrast-10pct) 50%);*/
+}
+
+.profile-user-fullname {
+   font-size: 12px;
+   color: white;
+}
+
+.profile-user-avatar {
+   width: 45px;
+   height: 45px;
+   margin-left: 3px;
+   margin-top: 4px;
+   pointer-events: none;
+   border: 1px solid gray;
+}
+
+.profile-following-numbers {
+   color: white;
+   font-weight: bold;
+}
+
+.view-more {
+   margin-left: 20vh;
+   font-size: 13px;  
+   color: var(--lumo-primary-text-color);
+}
+
+.header-total-followers {
+   font-size: 14px;
+   font-style: italic;
+   margin: 0;
+}
+
+.profile-total-followers, .profile-total-artworks {
+   font-size: 12px;
+   color: white;
+   margin: 0;
+   padding: 0;
+}
+
+.divdiv1, .divdiv2 {
+   display-flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+   font-size: 11px;
+}
+
+vaadin-button.profile-image-button {
+   border-radius: 10px;
+   color: white;
+   width: 100%;
+   background: var(--lumo-contrast-10pct);
+   font-weight: bold;
+}
+
+vaadin-button.follow-button {
+   width: 105px;
+   font-size: 13px;
+   color: white;
+   background: var(--lumo-primary-color);
+   border-radius: 10px;
+   font-weight: bold;
+}
+
+.no-followers {
+   color: var(--lumo-contrast-40pct);      
+}
+
+.div1, .div2, .div3{
+   display-flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+   font-size: 11px;
+}
+
+.follower-span {
+   font-style: italic;
+   color: white;
+}
+
+.follower-image1, .follower-image2, .follower-image3 {
+   pointer-events: none;
+   height: 150px;
+   width: 100px;
+   border-radius: 20px;
+}
+
+vaadin-button.unfollow-button {
+   font-size: 13px;
+   width: 105px;
+   background: var(--lumo-contrast-30pct);
+   color: white;
+   border-radius: 10px;
+   font-weight: bold;
+}
+
+.profile-contact {
+   color: white;
+}
+
+vaadin-confirm-dialog-overlay.profile-more-dialog{
+   user-select: none;
+}
+
+vaadin-confirm-dialog-overlay.profile-more-dialog::part(content){
+   background: var(--lumo-shade-20pct);
+}
+
+vaadin-confirm-dialog-overlay.profile-more-dialog > [slot="confirm-button"] {
+   margin-top: 15px;
+   width: 100px;
+   border-radius: 10px;
+}
+
+vaadin-confirm-dialog-overlay.profile-more-dialog::part(footer),
+vaadin-confirm-dialog-overlay.profile-more-dialog::part(header){
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgba(0, 0, 0, 0.50);
+}
+
+vaadin-confirm-dialog-overlay.profile-more-dialog::part(overlay){
+   border-radius: 20px;
+   border-bottom: 1px solid gray;
+   border-top: 1px solid gray;
+}
+
+.profile-contact-text {
+   margin-left: 50px;
+   color: var(--lumo-contrast-80pct);
+   font-style: italic;
+   border-bottom: 1px solid var(--lumo-contrast-70pct);
+}
+
+.profile-span {
+   margin: 0;
+   color: white;
+   font-weight: bold;
+}
+
+vaadin-button.profile-information {
+   color: var(--lumo-contrast-80pct);
+}
+
+.profile-information-layout {
+   margin: 0;
+   font-size: 14px;
+   background: black;
+   border-bottom: 0.5px solid gray;
+   background: var(--lumo-contrast-10pct);
+}
+
+vaadin-app-layout.profile-app-layout::part(navbar){
+   align-items: center;
+   margin: 0;
+   background: black;
+   border-bottom: 0.5px solid gray;
+}
+
+vaadin-icon.profile-back-button {
+   margin: 0;
+   color: white;
+   margin-left: 20px;
+}
+
+.profile-text {
+   font-style: italic;
+   font-size: 12px;
+   margin-left: 10px;
+}
+
+.profile-follow-layout {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.profile-artworks-layout {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.profile-button-layout {
+   border-bottom: 0.5px solid gray;
+   border-top: 0.5px solid gray;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: var(--lumo-contrast-10pct);
+}
+
+vaadin-app-layout.profile-app-layout[overlay] {
+   background: black;
+   user-select: none;
+}
+
+.profile-name {
+   color: white;
+   font-weight: bold;
+   word-wrap: break-word;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.profile-avatar {
+   pointer-events: none;
+   border: 1px solid gray;
+   width: 130px;
+   height: 130px;
+}

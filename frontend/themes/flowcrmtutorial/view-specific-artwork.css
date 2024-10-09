@@ -1,0 +1,63 @@
+vaadin-form-layout.specific-form-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.specific-reaction-button > vaadin-icon, .specific-comment-button > vaadin-icon, .specific-share-button > vaadin-icon {
+   width: 30px;
+   height: 30px;
+}
+
+.specific-share-button > vaadin-icon {
+   color: var(--lumo-error-color);
+}
+
+.specific-comment-button::part(label), .specific-share-button::part(label),
+.specific-reaction-button::part(label){
+   color: white;
+   font-size: 14px;
+}
+
+.specific-comment-button > vaadin-icon {
+   color: var(--lumo-success-text-color);
+}
+
+vaadin-button.specific-reaction-button, vaadin-button.specific-comment-button,
+.specific-share-button {
+   background: var(--lumo-contrast-10pct);
+   margin-top: 5px;
+   border-radius: 20px;
+   width: 100px;
+}
+
+.specific-buttons-layout {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 15px;
+}
+
+vaadin-app-layout.specific-app-layout::part(navbar) {
+   background: black;
+   border-top: 0.5px solid var(--lumo-contrast-60pct);
+   border-bottom: 0.5px solid var(--lumo-contrast-60pct);
+}
+
+vaadin-app-layout.profile-app-layout, vaadin-app-layout.specific-app-layout[overlay] {
+   background: black;
+}
+
+vaadin-app-layout.profile-app-layout::part(navbar){
+   border-top: 0.5px solid gray;
+   background: var(--lumo-contrast-10pct);
+}
+
+.specific-image {
+   pointer-events: none;
+   /*position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   max-height: 589px;*/
+}

@@ -1,0 +1,248 @@
+.edit-work-header-layout {
+   align-items: center;
+}
+
+.edit-education-layout {
+   padding-top: 0;
+   padding-bottom: 0;
+}
+
+.edit-work-layout {
+   margin: 0;
+   padding-bottom: 0;
+}
+
+.edit-header-text {
+   color: white;
+   font-weight: bold;
+}
+
+.about-main-layout {
+   background: var(--lumo-contrast-10pct);
+   height: 100%;
+   padding: 0;
+   overflow-x: auto;
+}
+
+.edit-add-work-experience {
+   margin-left: 10px;
+   color: #35ABF0;
+}
+
+.edit-work-icon {
+   color: white;
+   height: 40px;
+   width: 40px;
+   padding: 10px;
+   background: var(--lumo-contrast-10pct);
+   border-radius: 50%;
+}
+
+.edit-last-line-div {
+   background: var(--lumo-primary-contrast-color);
+   width: 100%;
+   height: 1px;
+}
+
+.edit-info-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.edit-info-button {
+  width: 330px;
+  background: var(--lumo-primary-color-10pct);
+  color: #8BC4FF;
+  font-weight: bold;
+  border-radius: 7px;
+}
+
+vaadin-app-layout.view-profile-app-layout[overlay],
+vaadin-app-layout.view-profile-app-layout::part(navbar),
+vaadin-app-layout.cover-photo-app-layout[overlay],
+vaadin-app-layout.cover-photo-app-layout::part(navbar){
+   background: black;
+}
+
+.view-profile-image {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   pointer-events: none;
+}
+
+.edit-profile-discard-text {
+   color: var(--lumo-error-text-color);
+}
+
+.edit-profile-save-text {
+   color: var(--lumo-primary-text-color);
+}
+
+.edit-upload vaadin-upload-file::part(remove-button) {
+   position: absolute;
+   bottom: 28px;
+   right: 30px;
+   color: var(--lumo-error-color);
+   font-size: 30px;
+   margin: 0;
+}
+
+.edit-upload vaadin-upload-file::part(name),
+.edit-upload vaadin-upload-file::part(done-icon),
+.edit-upload vaadin-upload-file-list::part(list),
+.edit-upload vaadin-upload-file[uploading] {
+   display: none;
+}
+
+vaadin-button.edit-upload-button::part(label),
+vaadin-button.edit-discard-button::part(label),
+vaadin-button.edit-eye-button::part(label) {
+   color: white;
+   margin-left: 10px;
+}
+
+vaadin-button.edit-upload-button > vaadin-icon,
+vaadin-button.edit-discard-button > vaadin-icon,
+vaadin-button.edit-eye-button > vaadin-icon {
+   color: white;
+   width: 50px;
+   height: 50px;
+   padding: 15px;
+   border-radius: 50%;
+   background: var(--lumo-contrast-10pct);
+}
+
+vaadin-upload.edit-upload > vaadin-button,
+vaadin-button.edit-eye-button {
+   background: transparent;
+   height: 50px;
+}
+
+vaadin-dialog-overlay.edit-profile-dialog::part(content) {
+  background: var(--lumo-contrast-10pct);
+  margin: 0;
+}
+
+vaadin-dialog-overlay.edit-profile-dialog::part(overlay) {
+   border-radius: 10px 10px 0 0;
+   position: absolute;
+   bottom: 0;
+   background: black;
+   height: 160px;
+   width: 100%;
+   top: 527px;
+}
+
+.edit-helper-text {
+   color: var(--lumo-contrast-50pct);
+   font-size: 12px;
+}
+
+.edit-bio-layout {
+   background: var(--lumo-contrast-10pct);
+   height: 100%;
+   width: 100%;
+}
+
+vaadin-button.edit-bio-button {
+   background: var(--lumo-primary-color);
+   color: white;
+   font-weight: bold;
+   border-radius: 7px;
+   position: relative;
+   top: 410px;
+}
+
+vaadin-text-area.edit-bio-text-area::part(input-field){
+   background: transparent;
+   color: white;
+   border: 1px solid var(--lumo-contrast-30pct);
+   border-radius: 5px;
+   height: 75px;
+}
+
+.edit-bio-text {
+   color: var(--lumo-contrast-70pct);
+   text-align: center;
+}
+
+.edit-cover-image {
+   height: 200px;
+   width: 100%;
+   border-radius: 10px;
+   object-fit: cover;
+   pointer-events: none;
+}
+
+.edit-line-div {
+   width: 100%;
+   height: 1px;
+   background: var(--lumo-contrast-30pct);
+}
+
+.edit-text {
+   color: #35ABF0;
+}
+
+.edit-profile-picture-text {
+}
+
+vaadin-app-layout.edit-app-layout::part(navbar) {
+   background: var(--lumo-contrast-10pct);
+   border-bottom: 0.5px solid var(--lumo-contrast-40pct);
+   align-items: center;
+}
+
+vaadin-app-layout.edit-app-layout[overlay] {
+   background: black;
+   user-select: none;
+}
+
+vaadin-app-layout.edit-app-layout > vaadin-form-layout {
+   background: var(--lumo-contrast-10pct);
+   height: 100%;
+   overflow-x: auto;
+}
+
+.edit-header-text, .edit-first-text, .edit-bio-header-text {
+   color: white;
+   font-weight: bold;
+}
+
+vaadin-avatar.edit-profile-avatar {
+   height: 120px;
+   width: 120px;
+   pointer-events: none;
+}
+
+.edit-profile-layout {
+   width: 100%;
+   padding-bottom: 0;
+   display: flex;
+   justify-content: space-between;
+}
+
+.edit-header-text {
+  display: flex;
+  align-items: center;
+}
+
+.edit-profile-parent-layout4 {
+  margin-top: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.edit-profile-parent-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

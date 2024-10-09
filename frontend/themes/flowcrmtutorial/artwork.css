@@ -1,0 +1,339 @@
+vaadin-upload.artwork-upload > vaadin-button {
+  display: flex;
+  padding-left: 15px;
+  width: 100%;
+  color: white;
+  background: transparent;
+  border: 1px solid var(--lumo-contrast-30pct);
+  margin-top: 10px;
+  border-radius: 20px;
+  font-size: 11px;
+}
+
+.artwork-upload vaadin-upload-file::part(remove-button) {
+  color: var(--lumo-error-color);
+}
+
+/*.artwork-upload vaadin-upload-file::part(done-icon),
+.artwork-upload vaadin-upload-file[uploading]
+.register-upload vaadin-upload-file::part(name) {
+  display: none;
+}*/
+
+vaadin-icon.main-artwork-icons:nth-child(1){
+  background: var(--lumo-primary-color);
+}
+
+vaadin-icon.main-artwork-icons:nth-child(2){
+  background: var(--lumo-error-color);
+  position: relative;
+  right: 20px;
+}
+
+vaadin-icon.main-artwork-icons:nth-child(3){
+  background: var(--lumo-warning-color);
+  position: relative;
+  right: 40px;
+}
+
+vaadin-icon.main-artwork-icons {
+  border-radius: 50%;
+  padding: 3px;
+  color: white;
+}
+
+.main-artwork-reactions {
+  color: white;
+  position: relative;
+  right: 40px;
+}
+
+vaadin-text-area.add-artwork-area::part(label){
+  color: white;
+  font-weight: bold;
+}
+
+image {
+  events-pointer: none;
+}
+
+.add-artwork-header-text {
+  color: white;
+  font-weight: bold;
+}
+
+vaadin-text-area.add-artwork-area > textarea:placeholder-shown{
+  color: var(--lumo-contrast-30pct);
+}
+
+vaadin-button.add-main-post-button {
+  background: var(--lumo-primary-color);
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.add-artwork-avatar {
+  width: 50px;
+  height: 50px;
+  border: 1px solid gray;
+  pointer-events: none;
+}
+
+.add-artwork-layout {
+  margin-bottom: 20px;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+
+vaadin-text-area.add-artwork-area::part(input-field){
+   background: var(--lumo-contrast-10pct);
+   border: 1px solid var(--lumo-contrast-20pct);
+   border-radius: 10px;
+   color: white;
+}
+
+vaadin-text-area.add-artwork-area {
+   margin-top: 20px;
+}
+
+.post-button {
+   color: var(--lumo-primary-color);
+   margin-left: 100px;
+   font-weight: bold;
+}
+
+vaadin-button.feed-comment > vaadin-icon, vaadin-button.feed-like > vaadin-icon,
+vaadin-button.feed-heart > vaadin-icon, vaadin-button.feed-reaction > vaadin-icon{
+   width: 30px;
+   height: 30px;
+}
+
+vaadin-button.feed-like::part(label), vaadin-button.feed-heart::part(label),
+vaadin-button.feed-comment::part(label), vaadin-button.feed-reaction::part(label){
+    font-size: 14px;
+    color: white;
+}
+
+.feed-comment, .feed-like, .feed-heart, .feed-reaction {
+   width: 100px;
+   background: transparent;
+   margin: 0;
+   padding: 0;
+}
+
+vaadin-button.feed-comment > vaadin-icon{
+   color: var(--lumo-success-text-color);
+}
+
+vaadin-button.feed-heart > vaadin-icon{
+   color: var(--lumo-error-color);
+}
+
+vaadin-button.feed-like > vaadin-icon{
+   color: var(--lumo-primary-color);
+}
+
+.feed-date-posted {
+   color: var(--lumo-contrast-70pct);
+   font-style: italic;
+   font-size: 8px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: var(--lumo-contrast-20pct);
+   height: 15px;
+   margin: 0;
+   width: 100%;
+}
+
+.feed-name {
+   margin-top: 0;
+   font-size: 12px;
+}
+
+vaadin-app-layout.main-feed[overlay] {
+   background: black;
+   user-select: none;
+}
+
+.profile-layout2 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-top: 0.5px solid gray;
+   background: var(--lumo-contrast-10pct);
+   display: flex;
+}
+
+vaadin-button.feed-follow {
+   color: var(--lumo-primary-color);
+   background: transparent;
+}
+
+.feed-avatar {
+   pointer-events: none;
+   margin-left: 10px;
+   margin-top: 10px;
+   width: 50px;
+   height: 50px;
+   border: 1px solid gray;
+   margin-bottom: 5px;
+}
+
+vaadin-icon.feed-share {
+   display: none;
+}
+
+.main-feed-buttons {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 10px;
+}
+
+.main-feed-image {
+   position: relative;
+   display: inline-block;
+   padding: 0;
+   margin: none;
+   pointer-events: none;
+}
+
+vaadin-icon.hearticon{
+  color: #0ef;
+  margin-left: 100px;
+}
+
+.heartreactions-span {
+  color: white;
+}
+
+vaadin-icon.likeicon{
+  color: #0ef;
+  margin-left: 50px;
+}
+
+.totalreactions-span {
+  color: white;
+}
+
+vaadin-button.unlike {
+  border-radius: 20px;
+  font-size: 15px;
+  margin-left: 50px;
+  background: #0ef;
+}
+
+vaadin-button.unlike::part(label) {
+   color: var(--lumo-shade-70pct);
+}
+
+vaadin-button.unheart {
+  border-radius: 20px;
+  font-size: 15px;
+  background: #0ef;
+}
+
+vaadin-button.unheart::part(label) {
+   color: var(--lumo-shade-70pct);
+}
+
+.total-reactions {
+  font-size: 12px;
+  color: white;
+}
+
+vaadin-button.like-button > vaadin-icon {
+   color: #0ef;
+}
+
+vaadin-button.like-button::part(label) {
+   color: white;
+}
+
+vaadin-button.heart-button > vaadin-icon {
+   color: #0ef;
+}
+
+vaadin-button.heart-button::part(label) {
+   color: white;
+}
+
+.heart-button {
+   border-top: 0.9px solid #0ef;
+   border-bottom: 0.9px solid #0ef;
+   width: 120px;
+   background: black;
+   border-radius: 20px;
+}
+
+.like-button {
+   border-top: 0.9px solid #0ef;
+   border-bottom: 0.9px solid #0ef;
+   margin-left: 12px;
+   width: 120px;
+   height: 35px;
+   background: black;
+   border-radius: 20px;
+}
+
+.artworks-count {
+   font-size: 12px;
+   margin-right: 10px;
+   text-shadow: 2px 2px 4px black;
+   color: white;
+}
+
+.artworks-name {
+   
+   font-size: 15px;
+}
+
+.artwork-image {
+   width: 91vw;  
+}
+   
+vaadin-app-layout.artwork-main::part(navbar) {
+   background: black;
+   border-radius: 20px;
+   border-top: 0.5px solid rgb(0, 255, 255);
+   border-bottom: 0.5px solid rgb(0, 255, 255);
+}
+
+.title, .posted {
+  animation: backInRight 2s none;
+}
+
+.artwork-image {
+  animation: backInDown 2s none;
+}
+
+.posted {
+  margin-bottom: 10px;
+  font-style: italic;
+  font-size: 12px;
+  color: var(--lumo-contrast-60pct);
+  margin-left: 20px;
+}
+
+.title {
+   color: white;
+   font-size: 25px;
+}
+
+.artwork-image {
+  border-top: 2px solid #0ef;
+  border-bottom: 2px solid #0ef;
+  border-radius: 20px;
+}
+
+.fullname {
+   animation: bounceInDown 2s none;
+   font-size: 15px;
+   font-weight: bold;
+   color: white;
+   margin-left: 30px;
+}

@@ -1,0 +1,76 @@
+.saved-post-buttons  vaadin-icon {
+  background: var(--lumo-contrast-20pct);
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.saved-post-buttons:active {
+  background: var(--lumo-contrast-10pct);
+}
+
+.saved-post-buttons {
+  user-select: none;
+  width: 100%;
+  background: none;
+  border-radius: 0;
+  color: white;
+  align-items: center;
+  margin: 0;
+}
+
+.total-saved-posts {
+  font-size: 14px;
+  color: var(--lumo-contrast-50pct);
+  margin-left: 15px;
+}
+
+vaadin-dialog-overlay.unsave-dialog::part(content){
+  width: 100%;
+  background: var(--lumo-contrast-10pct);
+}
+
+vaadin-dialog-overlay.unsave-dialog::part(overlay){
+  position: absolute;
+  top: 16px;
+  height: 650px;
+  width: 100%;
+  background: black;
+  border-radius: 20px 20px 0 0;
+}
+
+vaadin-dialog-overlay.unsave-dialog {
+  position: absolute;  
+  top: 430px;
+}
+
+.saved-parent-layout vaadin-icon {
+  color: var(--lumo-primary-color);
+  margin-right: 30px;
+}
+
+.saved-name {
+  font-size: 12px;
+}
+
+.saved-date-time {
+  font-style: italic;
+  font-size: 10px;
+  color: var(--lumo-contrast-60pct);
+}
+
+.saved-parent-layout {
+  align-items: center;
+  background: var(--lumo-contrast-10pct);
+}
+
+.saved-image {
+  max-width: 57px;
+  height: 80px;
+  border-radius: 10px;
+  pointer-events: none;
+  margin-left: 20px;
+  object-fit: cover;
+}
+

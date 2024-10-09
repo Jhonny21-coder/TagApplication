@@ -1,0 +1,451 @@
+@import 'animate.css';
+@import "story.css";
+@import "search.css";
+
+.notification-icon {
+  margin-right: 15px;
+}
+
+.notification-text {
+  position: absolute;
+  left: 266px;
+  background: var(--lumo-error-color);
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 20px;
+  height: 11px;
+  display: flex;
+  align-items: center;
+  bottom: 25px;
+  font-weight: bold;
+}
+
+.main-reactor-main-layout {
+  position: relative;
+  right: 40px;
+}
+
+.main-reactor-like-icon {
+  padding: 5px;
+  background: var(--lumo-primary-color);
+  border-radius: 50%;
+  color: white;
+}
+
+.main-reactor-heart-icon {
+  padding: 5px;
+  background: var(--lumo-error-color);
+  border-radius: 50%;
+  color: white;
+}
+
+.main-reactor-smile-icon {
+  padding: 5px;
+  background: var(--lumo-warning-color);
+  border-radius: 50%;
+  color: white;
+}
+
+.main-like-icon {
+  padding: 5px;
+  background: var(--lumo-primary-color);
+  border-radius: 50%;
+  color: white;
+  position: relative;
+  left: 60px;
+  top: 15px;
+}
+
+.main-heart-icon {
+  padding: 5px;
+  background: var(--lumo-error-color);
+  border-radius: 50%;
+  color: white;
+  position: relative;
+  left: 60px;
+  top: 15px;
+}
+
+.main-smile-icon {
+  padding: 5px;
+  background: var(--lumo-warning-color);
+  border-radius: 50%;
+  color: white;
+  position: relative;
+  left: 60px;
+  top: 15px;
+}
+
+.feed-listener-like {
+  padding: 7px;
+  background: var(--lumo-primary-color);
+  border-radius: 50%;
+  color: white;
+}
+
+.feed-listener-heart {
+  padding: 7px;
+  background: var(--lumo-error-color);
+  border-radius: 50%;
+  color: white;
+}
+
+.feed-listener-happy {
+  padding: 7px;
+  background: var(--lumo-warning-color);
+  border-radius: 50%;
+  color: white;
+}
+
+.online {
+   display: flex;
+   justify-content: center;
+   border: 1px solid gray;
+}
+
+vaadin-confirm-dialog-overlay.main-reactor-dialog::part(content){
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0;
+}
+
+vaadin-tabs.main-reactor-tabs vaadin-tab:active {
+   background: var(--lumo-contrast-20pct);
+}
+
+vaadin-tabs.main-reactor-tabs span {
+  font-size: 11px;
+  color: white;
+}
+
+vaadin-tabs.main-reactor-tabs::part(tabs) {
+   margin: 0;
+   padding: 0;
+}
+
+.main-tabs-Layout {
+   display: flex;
+   align-items: center;
+   margin: 0;
+   padding: 0;
+}
+
+.comment-reactions-div:active {
+   background: var(--lumo-contrast-30pct);
+}
+
+.main-all-text {
+   margin-right: 4px;
+}
+
+.main-dialog-content {
+   height: 460px;
+   width: 300px;
+}
+
+.main-reactor-header-text {
+   color: white;
+   font-weight: bold;
+   user-select: none;
+}
+
+vaadin-confirm-dialog-overlay.main-reactor-dialog > [slot="confirm-button"] {
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+vaadin-confirm-dialog-overlay.main-reactor-dialog::part(content),
+vaadin-confirm-dialog-overlay.main-reactor-dialog::part(header),
+vaadin-confirm-dialog-overlay.main-reactor-dialog::part(footer){
+   background: var(--lumo-contrast-10pct);
+   margin: 0;
+}
+
+vaadin-confirm-dialog-overlay.main-reactor-dialog::part(overlay) {
+   background: black;
+   border: 0.5px solid gray;
+   border-radius: 20px;
+}
+
+.main-reactor-main-layout vaadin-avatar {
+   border: 1px solid gray;
+   height: 45px;
+   width: 45px;
+}
+
+.main-reactor-main-layout:active {
+   background: var(--lumo-contrast-20pct);
+}
+
+.main-reactor-main-layout {
+   display: flex;
+   align-items: center;
+   width: 351px;
+   margin: 0;
+}
+
+.main-reactor-name {
+   user-select: none;
+   font-size: 13px;
+}
+
+.main-title-time-layout {
+  background: var(--lumo-contrast-10pct);
+}
+
+.main-artwork-total-layout {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: var(--lumo-contrast-10pct);
+   padding-bottom: 5px;
+   padding-top: 5px;
+}
+
+vaadin-icon.main-artwork-icons {
+   height: 20px;
+   width: 20px;
+}
+
+vaadin-button.copy-button {
+   background: var(--lumo-contrast-10pct);
+   color: white;
+   font-weight: bold;
+}
+
+.main-no-search {
+   color: var(--lumo-contrast-30pct);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+}
+
+vaadin-text-field.main-search-field {
+   width: 100%;
+}
+
+.username, .drawer-links {	
+   user-select: none;
+}
+
+.online, .avatar, .drawer-links {
+   pointer-events: none;
+}
+
+.uploaded-image {
+   pointer-events: none;
+}
+
+vaadin-button.save-artwork {
+   background: var(--lumo-primary-color);
+   color: white;
+   border-radius: 8px;
+}
+
+.main-artwork-image {
+   pointer-events: none;
+}
+
+.main-artwork-buttons {
+   border-bottom: 1px solid var(--lumo-contrast-30pct);
+}
+
+vaadin-icon.back-icon {
+   color: white;
+   padding: 8px;
+   margin-left: 15px;
+   width: 40px;
+   height: 40px;
+   top: 50px;
+}
+
+.horizontal {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 170px;
+   height: 50px;
+   margin-left: 40px;
+   margin-top: 10px;
+   background: var(--lumo-contrast-10pct);
+   border-radius: 10px;
+   font-weight: bold;
+   color: white;
+}
+
+.download-anchor {
+   color: white;
+   user-select: none;
+   font-size: 15px;
+}
+
+.download-url {
+   text-decoration: underline;
+   color: white;
+}
+
+.menu-bar vaadin-menu-bar-button > vaadin-menu-bar-item > vaadin-icon {
+   color: var(--lumo-primary-color);
+   margin-right: 7px;
+}
+
+.menu-bar vaadin-menu-bar-button {
+   background: transparent;
+   color: white;
+   margin-top: 5px;
+}
+
+.text4 {
+   font-size: 20px;
+}
+
+vaadin-text-field.url-field {
+   user-select: none;
+}
+
+vaadin-text-field.url-field::part(input-field) {
+   color: black;
+   font-size: 10px;
+   border: 1px solid black;
+   user-select: none;
+}
+
+vaadin-confirm-dialog-overlay.share-dialog > [slot="confirm-button"] {
+   background: transparent;
+   font-size: 15px;
+   font-weight: 5px;
+   color: var(--lumo-shade-90pct);
+   width: 100px;
+   margin-left: 90px;
+   border-radius: 20px;
+   border-bottom: 1px solid #0ef;
+   border-top: 1px solid #0ef;
+}
+
+vaadin-confirm-dialog-overlay.share-dialog::part(overlay) {
+   backdrop-filter: blur(5px);
+   background: var(--lumo-contrast-50pct);
+   color: black;
+   border-top: 2px solid #0ef;
+   border-bottom: 2px solid #0ef;
+   border-radius: 20px;
+}
+
+vaadin-confirm-dialog-overlay.share-dialog::part(header) {
+   background: var(--lumo-shade-90pct);
+   
+   font-size: 10px;
+}
+
+vaadin-confirm-dialog-overlay.share-dialog::part(footer) {
+  background: transparent;
+}
+
+.current-image {
+  max-width: 400px;
+  max-height: 270px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.current-text {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+
+.new-uploaded-image {
+  max-height: 440px;
+}
+
+.uploaded-image {
+  max-width: 400px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  max-height: 270px;
+}
+
+.add-text {
+  margin-left: 100px ;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+
+.image-form  vaadin-image{
+  width: 600px;
+}
+
+.artwork-date-time {
+  color: var(--lumo-contrast-60pct);
+  font-size: 12px;
+  font-style: italic;
+}
+
+.main-artwork-title {
+  font-size: 16px;
+  margin-top: 20px;
+  user-select: none;
+  white-space: pre;
+}
+
+.seperator {
+  display: none;
+}
+
+vaadin-button.artwork-delete {
+  color: var(--lumo-error-color);
+  background: transparent;
+  border-radius: 20px;
+  margin-left: 22px;
+}
+vaadin-button.artwork-share {
+  color: var(--lumo-primary-color);
+  background: transparent;
+  border-radius: 20px;
+}
+
+vaadin-button.artwork-edit {
+  color: var(--lumo-success-text-color);
+  background: transparent;
+  border-radius: 20px;
+}
+
+vaadin-button.artwork-delete::part(label),
+vaadin-button.artwork-edit::part(label),
+vaadin-button.artwork-share::part(label){
+  color: white;
+}
+
+vaadin-button.add-artwork-button {
+  background: transparent;
+  margin-left: 8px;
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+vaadin-button.add-artwork-button > vaadin-icon {
+  color: white;
+}
+
+vaadin-icon.search-button{
+  margin-top: 10px;
+  color: white;
+  margin-left: 10px;
+}
+
+vaadin-button.close-artwork {
+  
+  border-radius: 30px;
+  border: 0.5px solid skyblue;
+  font-size: 15px;
+  background: transparent;
+  color: white;
+  border-bottom: 1px solid #0ef;
+  border-top: 1px solid #0ef;
+}

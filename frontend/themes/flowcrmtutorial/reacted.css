@@ -1,0 +1,19 @@
+vaadin-app-layout.reacted-app-layout {
+  background: black;
+}
+
+vaadin-app-layout.reacted-app-layout::part(navbar) {
+  background: black;
+  display: flex;
+  align-items: center;
+}
+
+vaadin-app-layout.reacted-app-layout span {
+  display: flex;
+  align-items: center;
+}
+
+vaadin-app-layout.reacted-app-layout vaadin-icon {
+  font-size: 25px;
+  color: white;
+}

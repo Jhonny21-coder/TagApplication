@@ -1,0 +1,896 @@
+.story-app-layout > vaadin-form-layout {
+   overflow: hidden;
+}
+
+.story-edit-content-text {
+   position: fixed;
+   bottom: 70px;
+   filter: drop-shadow(0.5px 0.5px 0.5px black);
+   text-align: center;
+   word-wrap: break-word;
+   user-select: none;
+   color: white;
+}
+
+.edit-story-add-text-layout > vaadin-button {
+   margin-left: 75px;
+   background: var(--lumo-primary-color);
+   color: white;
+   border-radius: 30px;
+}
+
+.edit-story-add-text-layout {
+   position: fixed;
+   left: 3px;
+   top: 320px;
+   align-items: center;
+}
+
+.container {
+  height: 100px;
+  width: 100px;
+}
+
+.story-share-button:hover > .edit-story-field::part(input-field) {
+   background: transparent;
+}
+
+.edit-story-field >  input:placeholder-shown {
+   color: white;
+   margin-left: 5px;
+}
+
+.edit-story-field-value::part(input-field) {
+   background: none;
+   border: none;
+}
+
+.edit-story-field::part(input-field) {
+   background: var(--lumo-shade-50pct);
+   border: 0.5px solid gray;
+}
+
+.edit-story-field::part(input-field), 
+.edit-story-field-value::part(input-field) {
+   color: white;
+   height: 50px;
+   width: 280px;
+   border-radius: 30px;
+   padding-left: 5px;
+}
+
+/*.edit-story-field, .edit-story-field-value {
+   position: fixed;
+   left: 30px;
+   top: 320px;
+}*/
+
+.edit-story-buttons-layout {
+   position: fixed;
+   right: 0;
+   top: 50px;
+   background: gree;
+   max-width: 80px;
+}
+
+/*.canvas-container {
+   background: green;
+   height: 701px;
+   width: 300px;
+}*/
+
+.story-setting-icon::part(label){
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.story-setting-icon > vaadin-icon {
+  font-size: 23px;
+}
+
+.story-setting-icon {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 15px;
+  left: 10px;
+  color: white;
+  background: transparent;
+  max-width: 100px;
+  height: 40px;
+  border-radius: 7px;
+}
+
+.story-share-button > vaadin-icon {
+  font-size: 17px;
+  transform: rotate(45deg);
+}
+
+.story-share-button {
+  bottom: 5px;
+  right: 15px;
+  color: white;
+  background: var(--lumo-primary-color);
+  border-radius: 7px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  max-width: 120px;
+  height: 38px;
+  position: fixed;
+  font-size: 13px;
+}
+
+.story-text-button {
+   color: white;
+   /*top: 50px;
+   position: fixed;
+   right: 20px;*/
+   background: black;
+   background: var(--lumo-contrast-10pct);
+   border-radius: 50%;
+   max-width: 45px;
+   font-size: 30px;
+   padding: 13px;
+}
+
+.with-border1 {
+   position: absolute;
+   top: 200px;
+}
+
+.with-border {
+   top: 100px;
+   position: absolute;
+   user-select: none;
+}
+
+.v-dragged.card {
+    outline: 1px dotted hotpink;
+    opacity: 0.5;
+    background: green;
+}
+
+.story-edit-text {
+  position: absolute;
+  cursor: move;
+}
+
+.story-edit-video {
+   width: 100%;
+   height: 100%;
+}
+
+.story-edit-image {
+  display: none;
+  pointer-events: none;
+  max-height: 701px;
+  object-fit: cove;
+}
+
+.story-edit-image, .story-edit-video {
+   object-fit: cove;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.story-edit-close-icon {
+   position: fixed;
+   right: 140px;
+   top: 10px;
+   filter: drop-shadow(0.5px 0.5px 0.5px black);
+   font-size: 30px;
+   color: white;
+}
+
+/* Main Story View */
+.story-previous-images {
+  height: 185px;
+  border-radius: 10px;
+}
+
+.previous-main-layout span {
+  position: absolute;
+  top: 662px;
+  font-weight: bold;
+  color: var(--lumo-primary-text-color);
+  font-size: 14px;
+}
+
+.story-upload-image-layout {
+  width: 100%;
+  justify-content: center;
+}
+
+.previous-main-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.previous-row-layout {
+  padding-top: 2px;
+  margin: 0;
+}
+
+.previous-images {
+  width: 160px;
+  height: 185px;
+  object-fit: cover;
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.story-previous-layout {
+  width: 100%;
+}
+
+.story-previous-layout {
+  color: white;
+  padding-left: 10px;
+  margin-top: 5p;
+}
+
+.story-header-text {
+  margin-right: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 23px;
+}
+
+.story-main-text-button {
+  position: relative;
+  right: 4px;
+  background: linear-gradient(var(--lumo-contrast-10pct), var(--lumo-contrast-20pct));
+}
+
+.upload-multi-button {
+  background: linear-gradient(var(--lumo-primary-color), var(--lumo-primary-text-color));
+}
+
+.story-upload-button {
+  position: relative;
+  left: 4px;
+  background: linear-gradient(var(--lumo-success-color), var(--lumo-success-text-color));
+}
+
+.upload-multi-button, .story-upload-button, .story-main-text-button {
+  color: white;
+  border-radius: 10px;
+  width: 105px;
+  height: 150px;
+}
+
+.story-app-layout vaadin-form-layout {
+  background: var(--lumo-contrast-10pct);
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+  /*display: flex;*/
+  /*justify-content: space-around;*/
+}
+
+.upload-multi-button::part(label),
+.story-upload-button::part(label),
+.story-main-text-button::part(label){
+  font-weight: bold;
+  margin-top: 70px;
+}
+
+.upload-multi-button > vaadin-icon,
+.story-upload-button > vaadin-icon,
+.story-main-text-button > vaadin-icon {
+  padding: 12px;
+  position: absolute;
+  left: 27px;
+  bottom: 65px;
+  color: black;
+  background: white;
+  font-size: 32px;
+  border-radius: 50%;
+}
+
+.upload-multi-button {
+  background: linear-gradient(var(--lumo-primary-color), 
+  	var(--lumo-primary-text-color));
+}
+
+.story-multi-upload vaadin-upload-file::part(remove-button),
+.story-multi-upload vaadin-upload-file::part(done-icon),
+.story-multi-upload vaadin-upload-file::part(meta) {
+  display: none;
+}
+
+.story-multi-upload vaadin-upload-file[uploading] {
+  display: none;
+}
+
+.story-image, .story-image2 {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   max-height: 603px;
+   object-fit: cove;
+}
+
+.story-header-text {
+   color: white;
+   font-weight: bold;
+}
+
+.story-display-image {
+  /*position: absolute;
+  height: 255px;
+  width: 296px;*/
+  pointer-events: none;
+  /*max-height: 702px;
+  width: 358px;*/
+  object-fit: ;
+  margin-top: 200p;
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+}
+
+.story-reacted-like, .story-reacted-heart, .story-reacted-happy {
+   padding: 5px;
+   border-radius: 50%;
+   color: white;
+}
+
+.story-reacted-like {
+   background: var(--lumo-primary-color);
+}
+
+.story-reacted-heart {
+   background: var(--lumo-error-color);
+}
+
+.story-reacted-happy {
+   background: var(--lumo-warning-color);
+}
+
+.story-icons-layout > vaadin-icon {
+   font-size: 15px;
+}
+
+.story-icons-layout {
+  position: fixed;
+  bottom: 590px;
+  left: 15px;
+}
+
+.story-content {
+  background: black;
+  color: white;
+}
+
+vaadin-button.story-display-eye-icon > vaadin-icon {
+   font-size: 25px;
+   filter: drop-shadow(1px 1px 1px /*rgba(0, 0, 0, 0.6)*/ black);
+}
+
+vaadin-button.story-display-eye-icon {
+   color: var(--lumo-primary-color);
+   background: transparent;
+   width: 100%;
+   border-radius: 0;
+   margin: ;   
+}
+
+.story-display-text-layout {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 57px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word;
+  max-hieght: 100px;
+  padding: 0;
+  width: 100%;
+}
+
+.story-progress-layout {
+   padding-left: 15px;
+   padding-right: 15px;
+   position: absolute;
+   margin: 0;
+}
+
+vaadin-progress-bar.story-progress-inactive::part(bar) {
+   height: 1px;
+   margin: 0;
+}
+
+vaadin-progress-bar.story-progress-active::part(value) {
+   background: white;
+   height: 1px;
+}
+
+.swipe-animation {
+    animation: swipe 0.3s ease;
+}
+
+@keyframes swipe {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+vaadin-icon.story-angle-left-icon {
+  position: fixed;
+  top: 300px;
+  left: 20px;
+  font-size: 30px;
+  padding: 5px;
+  background: var(--lumo-shade-80pct);
+  border-radius: 50%;
+  border: 1px solid var(--lumo-contrast-60pct);
+  color: white;
+}
+
+vaadin-icon.story-angle-right-icon {
+  position: fixed;
+  top: 300px;
+  right: 20px;
+  font-size: 30px;
+  padding: 5px;
+  background: var(--lumo-shade-80pct);
+  border-radius: 50%;
+  border: 1px solid var(--lumo-contrast-60pct);
+  color: white;
+}
+
+.story-image-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-happy-icon, .story-heart-icon, .story-like-icon {
+  font-size: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 50%;
+  animation: pulse 1s infinite;
+  color: white;
+}
+
+.story-happy-icon {
+  background: var(--lumo-warning-color);
+}
+
+.story-heart-icon {
+  background: var(--lumo-error-color);
+  border-radius: 50%;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.story-like-icon {
+  background: var(--lumo-primary-color);
+}
+
+.story-footer-layout {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+vaadin-app-layout.story-display-layout[overlay]{
+  background: black;
+}
+
+.story-display-close-icon {
+  margin-right: 15px;
+  margin-top: 10px;
+  filter: drop-shadow(0.5px 0.5px 0.5px black);
+  color: white;
+  /*width: 55px;
+  height: 55px;*/
+  font-size: 30px;
+}
+
+.story-display-layout2 {
+  padding: 0;
+  margin-top: 0;
+  user-select: none;
+}
+
+vaadin-app-layout.story-display-layout::part(navbar){
+  background: black;
+  user-select: none;
+}
+
+.story-hours-ago {
+  font-size: 12px;
+  position: relative;
+  bottom: 7px;
+  text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+.story-display-name {
+  /*display: flex;
+  align-items: center;
+  justify-content: center;*/
+  word-wrap: break-word;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+  position: relative;
+  top: 10px;
+}
+
+.story-view-header-layout {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 0;
+}
+vaadin-avatar.story-display-avatar {
+   height: 40px;
+   width: 40px;
+   margin-left: 10px;
+   margin-top: 10px;
+   border: 1px solid gray;
+   pointer-events: none;
+}
+
+/* Own Story */
+.story-own-numbers {
+  position: relative;
+  bottom: 200px;    
+  height: 50px;
+  padding: 5px;
+  margin-left: 7px;
+  font-size: 11px;
+  font-weight: bold;
+  margin-left: ;
+  background: var(--lumo-primary-color);
+  border-radius: 5px;
+}
+
+.story-own-name {
+  position: relative;
+  bottom: 60px;
+  font-size: 11px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 1px 1px black;
+}
+
+.story-own-user-image {
+  width: 110px;
+  height: 198px;
+  border-radius: 15px;
+  pointer-events: none;
+  object-fit: cover;
+}
+
+.story-own-feed {
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--lumo-contrast-20pct);
+  margin-top: 8px;
+  margin-bottom: px;
+  border-radius: 15px;
+  height: 198px;
+  max-width: 110px;
+}
+
+/* Own Story */
+
+.happening-create-text {
+  color: white;
+  font-weight: bold;
+  font-size: 11px;
+  position: relative;
+  bottom: 8px;
+}
+
+vaadin-text-field.story-field > input{
+   border-radius: 20px;
+}
+
+vaadin-button.story-eye-icon vaadin-icon {
+   font-size: 25px;
+}
+
+vaadin-button.story-eye-icon {
+   /*margin-top: 5px;
+   margin-bottom: 5px;*/
+   color: var(--lumo-primary-text-color);
+   background: none;
+}
+
+.story-text-layout {
+   position: fixed;
+   bottom: 57px;
+   padding: 0;
+   margin: 0;
+   background: black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-top: 0.5px solid gray;
+}
+
+.story-text {
+   color: white;
+   /*font-weight: bold;*/
+   background: black;
+   margin-left: 5px;
+   margin-bottom: 5px;
+   /*word-wrap: break-word;
+   white-space: normal;*/
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.story-done-text {
+   color: white;
+   font-weight: bold;
+   font-size: 11px;
+   position: fixed;
+   bottom: 416px;
+   left: 309px;
+   background: var(--lumo-primary-color);
+   border-radius: 20px;
+   width: 46px;
+   height: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+/*.story-app-layout vaadin-form-layout {
+   background-size: cover;
+   background-position: center;
+}*/
+
+.story-div {
+   overflow: hidden;
+}
+
+vaadin-text-field.story-field > input:placeholder-shown {
+   margin-left: 5px;
+   color: white;
+}
+
+
+vaadin-text-field.story-field::part(input-field){
+   background: var(--lumo-shade-80pct);
+   height: 50px;
+   border-radius: 25px;
+   width: 300px;
+   color: white;
+   word-wrap: break-word;
+}
+
+vaadin-text-field.story-field {
+   position: fixed;
+   bottom: 400px;
+   left: 5px;
+}
+
+.story-image2 {
+   /*height: 586px;*/
+   pointer-events: none;
+   /*object-fit: cover;*/
+}
+
+/*vaadin-button.story-text-button > vaadin-icon {
+   background: black;
+   background: var(--lumo-contrast-10pct);
+   border-radius: 50%;
+   height: 50px;
+   width: 50px;
+   padding: 15px;
+   position: relative;
+   right: 10px;
+}
+
+vaadin-button.story-text-button {
+   color: white;
+   font-weight: bold;
+   font-size: 15x;
+   position: fixed;
+   bottom: 550px;
+   left: 30px;
+   background: black;
+   height: 60px;
+   width: 120px;
+   border-radius: 30px;
+}*/
+
+.story-image {
+   /*height: 586px;*/
+   pointer-events: none;
+   /*object-fit: cover;*/
+   overflow: hidden;
+}
+
+.story-header-layout {
+   display: flex;
+   align-items: center;
+   justify-content: space-betwee;
+   width: 100%;
+}
+
+vaadin-button.story-discard-button {
+  margin-left: 110px;
+  color: white;
+  background: var(--lumo-error-color);
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.story-upload vaadin-upload-file[uploading] {
+  display: none;
+}
+
+.story-upload vaadin-upload-file::part(remove-button),
+.story-upload vaadin-upload-file::part(done-icon) {
+  /*display: none;*/
+}
+
+/*vaadin-button.story-upload-button {
+  background: var(--lumo-contrast-10pct);
+  color: white;
+  border: 0.5px solid var(--lumo-contrast-40pct);
+  border-radius: 10px;
+}*/
+
+/*vaadin-upload.story-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}*/
+
+vaadin-icon.story-close-icon {
+  margin-left: 20px;
+  color: white;
+}
+
+vaadin-app-layout.story-app-layout[overlay] {
+  background: black;
+}
+
+vaadin-app-layout.story-app-layout::part(navbar) {
+  background: var(--lumo-contrast-10pct);
+  /*border-top: 0.5px solid gray;
+  border-bottom: 0.5px solid gray;*/
+}
+
+/*.story-footer-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}*/
+
+/*vaadin-button.story-share-button {
+  color: white;
+  background: var(--lumo-primary-color);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}*/
+
+.happening-numbers {
+  position: relative;
+  bottom: 200px;
+  padding: 5px;
+  font-size: 11px;
+  font-weight: bold;
+  margin-left: 7px;
+  background: var(--lumo-primary-color);
+  border-radius: 5px;
+}
+
+.happening-name {
+  position: relative;
+  bottom: 60px;	
+  font-size: 11px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 1px 1px black;
+}
+
+.happening-user-image {
+  width: 110px;
+  height: 197px;
+  border-radius: 15px;
+  pointer-events: none;
+  position: relative;
+  object-fit: cover;
+}
+
+.happenings-feed {
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--lumo-contrast-20pct);
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 15px;
+  max-height: 197px;
+  max-width: 110px;
+}
+
+.main-happening-layout {
+  margin-bottom: 8p;
+  padding: 0;
+  background: black;
+  background: var(--lumo-contrast-10pct);
+  border-bottom: 0.5px solid var(--lumo-contrast-20pct);
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.happening-profile-layout {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--lumo-contrast-20pct);
+  border-radius: 15px;
+  padding: 0;
+  margin-left: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  max-width: 112px;
+  max-height: 200px;
+}
+
+vaadin-icon.happening-add-icon {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  color: white;
+  padding: 3px;
+  position: relative;
+  bottom: 25px;
+  background: var(--lumo-primary-color);
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.happening-profile-image {
+  height: 123px;
+  width: 110px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  pointer-events: none;
+}

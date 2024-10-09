@@ -1,0 +1,213 @@
+.follower-delete-button {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.follower-delete-button, .follower-view-button {
+  align-items: center;
+}
+
+.follower-action-icon {
+   background: var(--lumo-contrast-10pct);
+   padding: 10px;
+   border-radius: 50%;
+   height: 44px;
+   width: 44px;
+}
+
+.follower-action-text {
+   color: white;
+   font-weight: bold;
+   font-size: 15px;
+}
+
+.follower-more-dialog::part(content) {
+   width: 328px;
+}
+
+.follower-more-dialog::part(content), 
+.follower-more-dialog::part(header) {
+   background: var(--lumo-contrast-20pct);
+}
+
+.follower-more-dialog::part(overlay) {
+   color: white;
+   font-weight: bold;
+   background: black;
+   position: absolute;
+   top: 484px;
+   border-radius: 25px 25px 0 0;
+   user-select: none;
+}
+
+.view-search-layout {
+   height: 100%;
+   background: var(--lumo-contrast-10pct);
+   overflow-x: auto;
+   user-select: none;
+}
+
+.follower-back-button {
+   font-size: 25px;
+   color: white;
+}
+
+.follower-app-layout::part(navbar){
+   background: var(--lumo-contrast-10pct);
+}
+
+.follower-app-layout[overlay] {
+   background: black;
+}
+
+.follower-header-layout {
+   width: 100%;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0;
+   margin: 0;
+   height: 22px;
+}
+
+.follower-main-layout {
+   height: 100%;
+}
+
+.follower-middle-layout {
+   padding-bottom: 0;
+   position: relative;
+   border-bottom:0.5px solid var(--lumo-contrast-30pct);
+   user-select: none;
+}
+
+.follower-full-name {
+   color: white;
+   font-size: 12px;
+   width: 148px;
+}
+
+.follower-child-layout {
+   width: 100%;
+   height: 100%;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+}
+
+.follower-offline {
+   border-radius: 50%;
+   width: 10px;
+   height: 10px;
+   background: var(--lumo-error-text-color);
+}
+
+.follower-online {
+   border-radius: 50%;
+   width: 10px;
+   height: 10px;
+   background: var(--lumo-success-text-color);
+}
+
+vaadin-button.post-more-button > vaadin-icon {
+   color: var(--lumo-error-color);
+}
+
+vaadin-confirm-dialog-overlay.delete-follower-dialog::part(header) {
+   display: flex;
+   justify-content: center;
+}
+
+vaadin-confirm-dialog-overlay.delete-follower-dialog::part(header),
+vaadin-confirm-dialog-overlay.delete-follower-dialog::part(footer),
+vaadin-confirm-dialog-overlay.delete-follower-dialog::part(content){
+   background: black;
+   background: var(--lumo-contrast-10pct);
+   user-select: none;
+   color: white;
+}
+
+vaadin-confirm-dialog-overlay.delete-follower-dialog vaadin-text-field > [slot="prefix"] {
+   margin-left: 5px;
+}
+
+vaadin-confirm-dialog-overlay.delete-follower-dialog vaadin-text-field > input:placeholder-shown {
+   font-size: 13px;
+}
+
+vaadin-confirm-dialog-overlay.delete-follower-dialog vaadin-text-field::part(input-field){
+   border-radius: 20px;
+   color: white;
+   font-size: 13px;
+   background: black;
+   background: var(--lumo-contrast-10pct);
+}
+
+vaadin-confirm-dialog-overlay.delete-follower-dialog vaadin-text-field {
+   width: 100%;
+}
+
+vaadin-confirm-dialog-overlay.delete-follower-dialog > [slot="confirm-button"] {
+   border-radius: 20px;
+   color: white;
+   font-weight: bold;
+}
+
+vaadin-confirm-dialog-overlay.delete-follower-dialog > [slot="cancel-button"] {
+   border-radius: 20px;
+   color: white;
+   background: var(--lumo-primary-color);
+   font-weight: bold;
+}
+
+vaadin-confirm-dialog-overlay.delete-follower-dialog::part(overlay){
+   background: black;
+   border: 0.5px solid gray;
+   border-radius: 20px;
+   user-select: none;
+}
+
+.follower-confirm-text {
+   font-size: 15px;
+   font-style: italic;
+}
+
+vaadin-confirm-dialog-overlay.follower-dialog::part(header),
+vaadin-confirm-dialog-overlay.follower-dialog::part(content),
+vaadin-confirm-dialog-overlay.follower-dialog::part(footer) {
+   background: black;
+   background: var(--lumo-contrast-10pct);
+}
+
+vaadin-confirm-dialog-overlay.follower-dialog::part(overlay) {
+   background: black;
+   border: 0.5px solid gray;
+   border-radius: 20px;
+   user-select: none;
+}
+
+vaadin-confirm-dialog-overlay.follower-dialog > [slot="cancel-button"] {
+   background: var(--lumo-primary-color);
+   color: white;
+   border-radius: 20px;
+   font-weight: bold;
+}
+
+vaadin-confirm-dialog-overlay.follower-dialog > [slot="confirm-button"] {
+   background: var(--lumo-error-color);
+   color: white;
+   border-radius: 20px;
+   font-weight: bold;
+}
+
+.view-avatar-div {
+   width: 100%;
+}
+
+.follower-delete-icon {
+   color: var(--lumo-error-color);
+   margin-left: 5px;
+}
+
+.follower-more-icon {
+   margin-left: 120px;
+}

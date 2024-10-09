@@ -1,0 +1,117 @@
+.view-middle-div {
+   justify-content: space-between;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   bottom: 10px;
+}
+
+.view-total-following {
+   font-style: italic;
+   font-size: 13px;
+   color: var(--lumo-contrast-90pct);
+}
+
+.view-exists-button {
+   display: none;
+}
+
+.view-avatar-div {
+   align-items: center;
+}
+
+.view-fullname {
+   font-weight: bold;
+   color: white;
+   font-size: 15px;  
+}
+
+.view-avatar {
+   pointer-events: none;
+   border: 1px solid var(--lumo-contrast-40pct);
+}
+
+vaadin-button.view-unfollow-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 10px;
+   width: 90px;
+   height: 30px;
+   margin: 0;
+   border-radius: 7px;
+   color: white;
+   background: var(--lumo-contrast-30pct);
+}
+
+vaadin-grid.view-grid::part(last-column-cell){
+   width: 1px;
+   background: black;
+}
+
+vaadin-grid.view-grid::part(first-column-cell){
+   width: 135px;
+   border: none;
+}
+
+vaadin-grid.view-grid::part(row){
+   margin: 0;
+   border: none;
+}
+
+vaadin-grid.view-grid::part(cell){
+   font-size: 11px;
+   margin: 0;
+   background: black;
+   border: none;
+}
+
+vaadin-grid.view-grid {
+   height: 506px;
+   background: black;
+   border: none;
+}
+
+vaadin-button.view-follow-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 13px;
+   width: 90px;
+   height: 30px;
+   margin: 0;
+   border-radius: 7px;
+   color: white;
+   background: var(--lumo-primary-color);
+}
+
+vaadin-text-field.view-search-field > [slot="prefix"] {
+   margin-left: 5px;
+}
+
+vaadin-text-field.view-search-field > input:placeholder-shown{
+   font-size: 13px;
+}
+
+vaadin-text-field.view-search-field {
+   width: 100%;
+   margin-top: 10p;
+   margin-bottom: 10p;
+}
+
+vaadin-text-field.view-search-field::part(input-field) {
+   border-radius: 20px;
+   color: white;
+   font-size: 14px;
+}
+
+.view-total-followers {
+   font-style: italic;
+   font-size: 13px;
+   color: var(--lumo-contrast-90pct);
+}
+
+.view-firstname {
+   color: white;
+}
